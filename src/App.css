@@ -1,38 +1,360 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Poppins', sans-serif;
+  color: #333333;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img{
+  max-width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+}
+li{
+  list-style: none;
+}
+nav ul li{
+  display: inline-block;
+  padding: 10px;
+} 
+ul li a{
+  text-decoration: none;
+  color: #333333;
+}
+.navbutton{
+  display: none;
+}
+header h2,
+.edie{
+  font-size: 36px;
+  line-height: 52px;
+  font-family: 'Heebo', sans-serif;
+}
+#navtoggle{
+  display: none;
+}
+.first-paragraph{
+  color: #2D9CDB;
+  font-size: 18px;
+  line-height: 27px;
+}
+.about h2,
+.about h1{
+  font-size: 48px;
+  line-height: 72px;
+  width: 500px;
+}
+.about{
+  margin-left: 200px;
+}
+.about-img{
+    border-radius: 12px;
+    margin: 10px 20px;
+  }
+.about-section2 p{
+  font-size: 18px;
+  line-height: 27px;
+  color: #4f4f4f;
+  width: 400px;
+}
+.contact p{
+  font-size: 14px;
+  color: #828282;
+  line-height: 21px;
+  margin-top: 20px;
+}
+.contact input{
+  width: 350px;
+  height: 50px;
+  border-radius: 12px;
+  border: 1px solid #f2f2f2;
+}
+.contact input::placeholder{
+  font-size: 18px;
+  line-height: 27px;
+  color: #bdbdbd;
+  padding-top: 20px;
+}
+.contact button{
+  width: 50px;
+  height: 50px;
+  background-color: #2D9CDB;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 27px;
+  color: #f2f2f2;
+}
+.services h2{
+  font-size: 36px;
+  line-height: 54px;
+  margin-left: 50px;
+  width: 400px;
+}
+.service{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.sub-service{
+  border: 1px solid #4F4F4F; 
+  border: none;
+  height: 300px;
+  width: 341px;
+  border-radius: 24px;
+}
+.sub-service:hover{
+  box-shadow: 0px 10px 30px 0px #3333331A;
+}
+.icon{
+  width: 60px;
+  height: 30px;
+  border-radius: 3px;
+  padding: 3px;
+  color: #fff;
+  margin: 15px;
+}
+.pen-icon{
+  background-color: #2D9CDB;
+}
+.code-icon{
+  background: #27AE60;
+}
+.bars-icon{
+  background: #EB5757;
+}
+.one,
+.two,
+.three{
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  margin-left: 15px;
+}
+.sub-service p:nth-child(2){
+    color: #4F4F4F;
+    font-size: 16px;
+    line-height: 24px;
+    width: 50px;
+}
+.service-detail{
+  width: 90%;
+  margin-left: 15px;
+  margin-bottom: 70px;
+}
+button{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #828282;
+  width: 100px;
+  height: 30px;
+  margin-left: 15px;
+}
+.btn{
+  background-color: #2D9CDB;
+  color: #fff;
+}
+.project{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding-top: 50px;
+}
+.project2{
+  position: relative;
+  bottom: 30px;
+}
+.project3{
+  position: relative;
+  top: 30px;
+}
+.button{
+  text-align: right;
+}
+.button a{
+  font-size: 24px;
+  line-height: 36px;
+  color: #2D9CDB;
+  text-decoration: none;
+}
+.team{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.team>div p:nth-child(1){
+  color: #EB5757;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+}
+.team>div h3{
+  font-size: 36px;
+  line-height: 54px;
+  width: 280px;
+}
+.team>div p:nth-child(3){
+  font-size: 16px;
+  line-height: 24px;
+  color: #4f4f4f;
+  width: 273px;
+}
+.team-members{
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-gap: 20px;
+}
+.team-members img{
+  border-radius: 12px;
+}
+.image3{
+  grid-column: 2/3;
+}
+.image1{
+  position: relative;
+  top: 100px;
+}
+.service,
+.project,
+.testimonial-section,
+.team{
+  margin-left: 50px;
+  padding-top: 150px;
+}
+.testimonial-section >p{
+  font-size: 36px;
+  line-height: 54px;
+}
+.testimony{
+  display: flex;
+  justify-content: start;
+  margin-bottom: 100px;
+}
+.testimony-image{
+  width: 150px;
+  height: 160px;
+}
+.testimony div p:nth-child(1){
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 10px;
+}
+.testimony div p:nth-child(2){
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 50px;
+}
+.testimony div{
+  margin-left: 20px;
+}
+footer{
+  background-color: #100E1D;
+  color: #f2f2f2;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+.socials ul{
+  display: flex;
+}
+.socials ul li,
+.edie{
+  padding-left: 10px;
+}
+footer p{
+  grid-column: 2/3;
+  margin-top: 90px;
+}
+footer p a{
+  text-decoration: none;
+  color: #f2f2f2;
+  text-align: center;
+  padding-bottom: 10px;
+}
+footer p a:hover{
+  border-bottom: 5px solid #fff;
+}
+.footer-links{
+  margin-left: 50px;
+}
+.footer-links ul li a{
+  color: #f2f2f2;
+}
+p.contact-footer{
+  color: #f2f2f2;
+  margin-top: unset;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width:789px) {
+  .navbutton{
+    display: block;
+  }
+  /* nav ul li a {
+    display: block;
+    padding: 12px;
+    color: #DAE1E7;
+    text-decoration: none;
+    letter-spacing: 0.05em;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  nav{
+    position: absolute;
+    background-color: #3D4852;
+    top:70px;
+    left:0;
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  #navtoggle:checked ~ nav ul {
+    max-height: 200px;
+    padding: 15px 0;
+    transition: all 0.5s;
+  } */
+  .service{
+    grid-template-columns: 1fr;
+    grid-row-gap: 40px;
   }
+  .sub-service p:nth-child(2){
+    width: 400px;
+  }
+  .project{
+    grid-template-columns: 1fr;
+  }
+  .project2,
+  .project3{
+    position: unset;
+  }
+  .team{
+    grid-template-columns: 1fr;
+  }
+  .about{
+    margin-left: 50px;
+  }
+  .about h2,
+  .about h1{
+  font-size: 30px;
+  line-height: 52px;
+  width: 400px;
+  }
+  .service,
+  .project,
+  .testimonial-section,
+  .team{
+  margin-left: 20px;
+  }
+  footer{
+  grid-template-columns: 1fr;
+}
+  .footer-links,
+  footer .contact{
+  margin-left: 25px;
+}
+.footer-item{
+  padding-top: 40px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
 }
