@@ -17,7 +17,7 @@ class Header extends React.Component{
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <label>
+        <label for="navtoggle">
             <FontAwesomeIcon icon={faBars} className="navbutton"/>
         </label>
       </header>
