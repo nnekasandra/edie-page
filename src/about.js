@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react';
 import React from 'react';
 import {faPen} from '@fortawesome/free-solid-svg-icons';
 import{faCode} from '@fortawesome/free-solid-svg-icons'

@@ -6,11 +6,11 @@ class Footer extends React.Component{
             <footer>
                 <div className="footer-links">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Our Works</a></li>
-                        <li><a href="#">Clients</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="https://www.edie.com">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="https://www.google.com">Our Works</a></li>
+                        <li><a href="https://www.google.com">Clients</a></li>
+                        <li><a href="mailto:contact@edie.com">Contact</a></li>
                     </ul>
                 </div>
                 <div className="footer-item">

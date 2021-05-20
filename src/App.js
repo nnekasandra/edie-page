@@ -10,11 +10,11 @@ class Header extends React.Component{
         <input type="checkbox" id="navtoggle"/>
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Our Works</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="https://www.google.com">Our Works</a></li>
+            <li><a href="https://www.google.com">Clients</a></li>
+            <li><a href="mailto:contact@edie.com">Contact</a></li>
           </ul>
         </nav>
         <label for="navtoggle">
