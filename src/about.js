@@ -67,7 +67,7 @@ class About extends React.Component{
                         </figure>
                         </div>
                         <div className="button">
-                            <a href="#">See More @;</a>
+                            <a href="https://www.google.com">See More</a>
                         </div>
                     </div>
                     <div className="team">
