@@ -6,6 +6,8 @@
 body{
   font-family: 'Poppins', sans-serif;
   color: #333333;
+  width: 100%; 
+  overflow-x: hidden;
 }
 img{
   max-width: 100%;
@@ -20,7 +22,7 @@ li{
 nav ul{
   display: flex;
   position: relative;
-  left: 400px;
+  left: 100px;
   top: 20px;
 }
 nav ul li{
@@ -61,7 +63,7 @@ header h2,
 }
 .about-img{
     border-radius: 12px;
-    margin: 10px 20px;
+    margin: 10px 30px;
   }
 .about-section2 p{
   font-size: 18px;
@@ -76,7 +78,7 @@ header h2,
   margin-top: 20px;
 }
 .contact input{
-  width: 350px;
+  width: 40%;
   height: 50px;
   border-radius: 12px;
   border: 1px solid #f2f2f2;
@@ -89,12 +91,15 @@ header h2,
 }
 .contact button{
   width: 50px;
-  height: 50px;
+  height: 40px;
   background-color: #2D9CDB;
   cursor: pointer;
   font-size: 18px;
   line-height: 27px;
   color: #f2f2f2;
+  border-radius: 12px;
+  position: relative;
+  right: 65px;
 }
 .services h2{
   font-size: 36px;
@@ -107,12 +112,11 @@ header h2,
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   justify-content: center;
+  align-items: center;
 }
 .sub-service{
   border: 1px solid #4F4F4F; 
   border: none;
-  height: 400px;
-  width: 341px;
   border-radius: 24px;
 }
 .sub-service:hover{
@@ -154,6 +158,9 @@ header h2,
   width: 90%;
   margin-left: 15px;
   margin-bottom: 70px;
+}
+div>h2{
+  margin-top: 30px;
 }
 button{
   font-size: 16px;
@@ -254,7 +261,7 @@ button{
 }
 .testimony div p:nth-child(2){
   font-size: 18px;
-  line-height: 27px;
+  line-height: 18px;
   margin-top: 50px;
 }
 .testimony div{
@@ -273,6 +280,10 @@ footer{
 .socials ul li,
 .edie{
   padding-left: 10px;
+}
+.edie,
+.footer-item{
+  margin-top: 0;
 }
 footer p{
   grid-column: 2/3;
@@ -302,7 +313,7 @@ p.contact-footer{
   .navbutton{
     display: block;
     position: relative;
-    top: 15px;
+    top: 10px;
     cursor: pointer;
   }
   nav {
@@ -325,7 +336,10 @@ p.contact-footer{
     display: unset;
     max-height: 350px;
     padding: 15px 0;
-    transition: all 0.5s;
+    transition: all 1s;
+  }
+  .contact input{
+    width: 80%;
   }
   .service{
     grid-template-columns: 1fr;
@@ -359,6 +373,10 @@ p.contact-footer{
   .team{
   margin-left: 20px;
   }
+  .sub-service{
+    width: 90%;
+    height: 400px;
+  }
   footer{
   grid-template-columns: 1fr;
 }
@@ -371,4 +389,9 @@ p.contact-footer{
   margin-left: 20px;
   margin-bottom: 20px;
 }
+}
+@media (min-width:900px) {
+  nav ul{
+    left: 200px;
+  }
 }
