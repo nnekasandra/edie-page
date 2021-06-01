@@ -2,34 +2,21 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 body{
   font-family: 'Poppins', sans-serif;
   color: #333333;
-  width: 100%; 
-  overflow-x: hidden;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
 }
 img{
   max-width: 100%;
 }
-header{
-  display: flex;
-  justify-content: space-between;
-}
-li{
-  list-style: none;
-}
-nav ul{
-  display: flex;
-  position: relative;
-  left: 100px;
-  top: 20px;
-}
-nav ul li{
-  margin-left: 30px;
-}
-nav ul li a{
-  display: inline-block;
+#navtoggle{
+  display: none;
 }
 ul li a{
   text-decoration: none;
@@ -38,14 +25,28 @@ ul li a{
 .navbutton{
   display: none;
 }
-header h2,
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 120px;
+  top: 50px;
+}
+nav ul li{
+  margin-left: 30px;
+}
+nav ul li a:hover{
+  font-size: 20px;
+}
+.header h2{
+  position: relative;
+  top: 3px;
+}
+.header h2,
 .edie{
   font-size: 36px;
   line-height: 52px;
   font-family: 'Heebo', sans-serif;
-}
-#navtoggle{
-  display: none;
 }
 .first-paragraph{
   color: #2D9CDB;
@@ -58,13 +59,13 @@ header h2,
   line-height: 72px;
   width: 500px;
 }
+.about-img{
+    border-radius: 12px;
+    margin: 20px 0;
+}
 .about{
   margin-left: 200px;
 }
-.about-img{
-    border-radius: 12px;
-    margin: 10px 30px;
-  }
 .about-section2 p{
   font-size: 18px;
   line-height: 27px;
@@ -72,16 +73,16 @@ header h2,
   width: 400px;
 }
 .contact p{
-  font-size: 14px;
   color: #828282;
   line-height: 21px;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 .contact input{
   width: 40%;
   height: 50px;
   border-radius: 12px;
-  border: 1px solid #f2f2f2;
+  border: 3px solid #333333;
 }
 .contact input::placeholder{
   font-size: 18px;
@@ -90,7 +91,7 @@ header h2,
   padding-top: 20px;
 }
 .contact button{
-  width: 50px;
+  width: 60px;
   height: 40px;
   background-color: #2D9CDB;
   cursor: pointer;
@@ -98,8 +99,7 @@ header h2,
   line-height: 27px;
   color: #f2f2f2;
   border-radius: 12px;
-  position: relative;
-  right: 65px;
+  margin-left: 10px;
 }
 .services h2{
   font-size: 36px;
@@ -112,7 +112,6 @@ header h2,
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   justify-content: center;
-  align-items: center;
 }
 .sub-service{
   border: 1px solid #4F4F4F; 
@@ -120,7 +119,7 @@ header h2,
   border-radius: 24px;
 }
 .sub-service:hover{
-  box-shadow: 0px 10px 30px 0px #3333331A;
+  box-shadow: 0px 10px 30px 0px #333333;
 }
 .icon{
   width: 60px;
@@ -181,6 +180,9 @@ button{
   grid-gap: 10px;
   padding-top: 50px;
 }
+.project figure img{
+  width: 100%;
+}
 .project2{
   position: relative;
   bottom: 30px;
@@ -238,8 +240,8 @@ button{
 .project,
 .testimonial-section,
 .team{
-  margin-left: 50px;
-  padding-top: 150px;
+  margin-left: 30px;
+  padding-top: 100px;
 }
 .testimonial-section >p{
   font-size: 36px;
@@ -267,12 +269,15 @@ button{
 .testimony div{
   margin-left: 20px;
 }
-footer{
-  background-color: #100E1D;
+.footer{
   color: #f2f2f2;
   padding-top: 20px;
   display: grid;
   grid-template-columns: repeat(3, auto);
+}
+footer{
+  background-color: #100e1d;
+  padding-top: 50px;
 }
 .socials ul{
   display: flex;
@@ -285,58 +290,78 @@ footer{
 .footer-item{
   margin-top: 0;
 }
-footer p{
-  grid-column: 2/3;
-  margin-top: 90px;
-}
-footer p a{
-  text-decoration: none;
-  color: #f2f2f2;
-  text-align: center;
-  padding-bottom: 10px;
-}
-footer p a:hover{
-  border-bottom: 5px solid #fff;
-}
 .footer-links{
   margin-left: 50px;
 }
 .footer-links ul li a{
   color: #f2f2f2;
 }
+.footer-links ul li{
+  margin-bottom: 10px;
+}
 p.contact-footer{
   color: #f2f2f2;
   margin-top: unset;
 }
-
-@media screen and (max-width:789px) {
+.attribution{
+  color: #f2f2f2;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.attribution a{
+  text-decoration: none;
+  color: #f2f2f2;
+}
+.attribution a:hover{
+  border-bottom: 3px solid #fff;
+  font-size: 20px;
+}
+@media (max-width:700px) {
   .navbutton{
+    font-size: 2.4em;
+    line-height: 50px;
+    cursor: pointer;
     display: block;
     position: relative;
-    top: 10px;
-    cursor: pointer;
+    top: 35px;
   }
-  nav {
+  nav{
     position: absolute;
-    background-color: #2D9CDB;
-    top:50px;
+    background-color:  #2D9CDB;
+    top:70px;
     left:0;
     width: 100%;
   }
+  nav ul li {
+    padding: 0 15px;
+    margin-left: unset;
+  }
   nav ul li a {
+    display: inline-block;
     padding: 12px;
-    color: #333333;
+    color: #DAE1E7;
+    text-decoration: none;
+    letter-spacing: 0.05em;
   }
   nav ul{
     max-height: 0;
     overflow: hidden;
     position: unset;
   }
-    #navtoggle:checked ~ nav ul {
+  #navtoggle:checked ~ nav ul {
     display: unset;
-    max-height: 350px;
+    max-height: 400px;
     padding: 15px 0;
-    transition: all 1s;
+    transition: all 0.5s;
+  }
+  .about h2,
+  .about h1{
+  font-size: 40px;
+  line-height: 42px;
+  width: 400px;
+  }
+  .about{
+    margin-left: 50px;
   }
   .contact input{
     width: 80%;
@@ -344,9 +369,11 @@ p.contact-footer{
   .service{
     grid-template-columns: 1fr;
     grid-row-gap: 40px;
+    justify-content: center;
+    margin-left: 20px;
   }
-  .sub-service p:nth-child(2){
-    width: 400px;
+  .sub-service{
+  width: 80%;
   }
   .project{
     grid-template-columns: 1fr;
@@ -355,31 +382,17 @@ p.contact-footer{
   .project3{
     position: unset;
   }
-  .team{
-    grid-template-columns: 1fr;
-  }
-  .about{
-    margin-left: 50px;
-  }
-  .about h2,
-  .about h1{
-  font-size: 30px;
-  line-height: 52px;
-  width: 400px;
-  }
-  .service,
   .project,
   .testimonial-section,
   .team{
   margin-left: 20px;
   }
-  .sub-service{
-    width: 90%;
-    height: 400px;
+  .team{
+    grid-template-columns: 1fr;
   }
-  footer{
-  grid-template-columns: 1fr;
-}
+  .footer{
+    grid-template-columns: 1fr;
+  }
   .footer-links,
   footer .contact{
   margin-left: 25px;

@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.css'
 class Footer extends React.Component{
     render(){
         return(
             <footer>
-                <div className="footer-links">
+                <div className="footer">
+                    <div className="footer-links">
                     <ul>
                         <li><a href="https://www.edie.com">Home</a></li>
                         <li><a href="#services">Services</a></li>
@@ -28,8 +28,9 @@ class Footer extends React.Component{
                     <input type="email" className="mail" placeholder="email"/>
                     <button>Join</button>
                 </div>
+                </div>
                 <center>
-                    <p>Created by <a href="https://www.github.com/nnekasandra">NnekaSandra @devChallenges.io</a></p>
+                    <p className="attribution">Created by <a href="https://www.github.com/nnekasandra">NnekaSandra @devChallenges.io</a></p>
                 </center>
             </footer>
         );

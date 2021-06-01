@@ -3,7 +3,6 @@ import {faPen} from '@fortawesome/free-solid-svg-icons';
 import{faCode} from '@fortawesome/free-solid-svg-icons'
 import {faBars} from '@fortawesome/free-solid-svg-icons';
 import{FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import './App.css'
 class About extends React.Component{
     render(){
         return(
