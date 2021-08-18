@@ -24,9 +24,11 @@ class Footer extends React.Component{
                     </div>
                 </div>
                 <div className="contact">
-                    <p className="contact-footer">Want us to contact you?</p>
-                    <input type="email" className="mail" placeholder="email"/>
-                    <button>Join</button>
+                <p className="contact-footer">Want us to contact you?</p>
+                    <div className="input">
+                        <input type="email" className="mail" placeholder="email"/>
+                        <button>Join</button>
+                    </div>
                 </div>
                 </div>
                 <center>

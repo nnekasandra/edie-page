@@ -5,9 +5,11 @@ class Header extends React.Component{
   render(){
     return(
       <header>
-        <div className="header">
           <h2>Edie</h2>
           <input type="checkbox" id="navtoggle"/>
+          <label for="navtoggle" className="menu-btn">
+              <FontAwesomeIcon icon={faBars} className="navbutton"/>
+          </label>
           <nav>
             <ul>
               <li><a href="#home">Home</a></li>
@@ -17,10 +19,6 @@ class Header extends React.Component{
               <li><a href="mailto:contact@edie.com">Contact</a></li>
             </ul>
           </nav>
-          <label for="navtoggle">
-              <FontAwesomeIcon icon={faBars} className="navbutton"/>
-          </label>
-        </div>
       </header>
     );
   }
