@@ -428,6 +428,9 @@ p.contact-footer{
   .service{
     flex-direction: column;
   }
+  .sub-service{
+    height: unset;
+  }
   .project{
     grid-template-columns: 1fr;
     padding:  0 50px 50px;
@@ -437,7 +440,7 @@ p.contact-footer{
     position: unset;
   }
   .testimonial-section p{
-    font-size: 26px;
+    font-size: 24px;
     line-height: 40px;
   }
   .button{
@@ -449,6 +452,7 @@ p.contact-footer{
   }
   .footer{
     grid-template-columns: 1fr;
+    width: 100%;
   }
   .footer-links,
   footer .contact{
