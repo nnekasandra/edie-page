@@ -28,7 +28,6 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   display: flex;
   width: 100%;
   height: 70px;
@@ -304,7 +303,7 @@ line-height: 21px;
 .testimony p:nth-child(1){
   font-size: 24px;
   margin-left: 30px;
-  margin-top: 70px;
+  margin-top: 80px;
   font-weight: 500;
 }
 .testimony p:nth-child(2){
@@ -328,6 +327,7 @@ footer ul li a{
 .footer{
   color: #f2f2f2;
   padding-top: 20px;
+  padding-left: 50px;
   display: grid;
   grid-template-columns: repeat(3, auto);
 }
@@ -348,9 +348,6 @@ footer ul{
 .edie,
 .footer-item{
   margin-top: 0;
-}
-.footer-links{
-  margin-left: 50px;
 }
 .footer-links ul li a{
   color: #f2f2f2;
@@ -452,13 +449,20 @@ p.contact-footer{
   .footer{
     grid-template-columns: 1fr;
   }
-  .footer-links,
-  footer .contact{
-  margin-left: 25px;
-  }
   .footer-item{
   padding-top: 40px;
-  margin-left: 20px;
   margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width:200px) and (max-width:350px) {
+  .input{
+    max-width: 250px;
+  }
+  .testimony img{
+    width: 150px;
+  }
+  .footer{
+    padding-left: 20px;
+    margin: 0;
   }
 }
